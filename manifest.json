@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Patreon Video Saver",
+  "version": "1.0.0",
+  "description": "Save videos from Patreon posts you have access to, for personal offline viewing.",
+  "permissions": [
+    "webRequest",
+    "storage",
+    "downloads",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "*://*.patreon.com/*",
+    "*://*.mux.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Patreon Video Saver"
+  }
+}
